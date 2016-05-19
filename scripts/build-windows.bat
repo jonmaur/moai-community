@@ -40,6 +40,7 @@ cmake -G "%generator%" ^
 -DBUILD_WINDOWS=true ^
 -DMOAI_SDK_HOME="%MOAI_SDK_HOME%" ^
 -DMOAI_SDL=true ^
+-DDIRECTX=TRUE ^
 -DCMAKE_INSTALL_PREFIX="%libprefix%\Release" ^
 -DMOAI_HTTP_SERVER=true ^
 "%rootpath%\cmake\hosts\host-win-sdl" 
