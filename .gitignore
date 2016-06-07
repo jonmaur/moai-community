@@ -11,3 +11,4 @@ scripts/env-local.bat
 env-local.sh
 /bin/moai
 /moaisdk-*
+imgui.ini
