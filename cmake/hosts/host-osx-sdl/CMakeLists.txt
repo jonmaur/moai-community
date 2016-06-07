@@ -53,6 +53,7 @@ target_link_libraries ( moai
   moai-core
   moai-apple
   moai-sdl
+  moai-imgui
   zlcore
   SDL2-static
     ${APPLICATION_SERVICES_LIBRARY}

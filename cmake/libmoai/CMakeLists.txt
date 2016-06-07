@@ -35,6 +35,7 @@ add_subdirectory ( moai-plugins )
 #platform specific libs
 if (BUILD_LINUX OR BUILD_OSX OR BUILD_WINDOWS)
   add_subdirectory ( moai-sdl )
+  add_subdirectory ( moai-imgui )
 endif (BUILD_LINUX OR BUILD_OSX OR BUILD_WINDOWS)
 
 if ( BUILD_OSX OR BUILD_IOS )

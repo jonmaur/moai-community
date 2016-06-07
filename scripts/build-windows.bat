@@ -40,11 +40,15 @@ cmake -G "%generator%" ^
 -DBUILD_WINDOWS=true ^
 -DMOAI_SDK_HOME="%MOAI_SDK_HOME%" ^
 -DMOAI_SDL=true ^
+-DMOAI_IMGUI=true ^
 -DDIRECTX=TRUE ^
 -DCMAKE_INSTALL_PREFIX="%libprefix%\Release" ^
 -DMOAI_HTTP_SERVER=true ^
 "%rootpath%\cmake\hosts\host-win-sdl" 
 if ERRORLEVEL 1 exit /b 1
+
+rem echo "Build complete"
+rem exit /b 0
 
 cmake --build . --target INSTALL --config Release -- /verbosity:minimal || exit /b 1
 

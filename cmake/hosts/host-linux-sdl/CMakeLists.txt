@@ -82,6 +82,7 @@ target_link_libraries ( moai
   moai-util
   moai-core
   moai-sdl
+  moai-imgui
   zlcore
   SDL2-static
   pthread

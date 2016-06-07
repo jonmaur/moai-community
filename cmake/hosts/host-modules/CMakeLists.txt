@@ -38,6 +38,11 @@ if ( MOAI_SDL OR LIB_PATH)
   target_link_libraries ( host-modules moai-sdl )
 endif ( MOAI_SDL OR LIB_PATH)
 
+#IMGUI
+if ( MOAI_IMGUI OR LIB_PATH)
+  target_link_libraries ( host-modules moai-imgui )
+endif ( MOAI_IMGUI OR LIB_PATH)
+
 #Http Client
 if ( MOAI_HTTP_CLIENT OR LIB_PATH)
   target_link_libraries ( host-modules moai-http-client )
